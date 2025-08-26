@@ -64,7 +64,7 @@ public class AIUtil {
 	 *
 	 * @param config 创建的AI服务模型的配置
 	 * @return HutoolService
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	public static HutoolService getHutoolService(final AIConfig config) {
 		return getAIService(config, HutoolService.class);

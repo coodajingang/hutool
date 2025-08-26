@@ -40,7 +40,7 @@ public interface DeepSeekService extends AIService {
 	 * 模型beta功能-SSE流式输出
 	 * @param prompt 题词
 	 * @param callback 流式数据回调函数
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	 void beta(String prompt, final Consumer<String> callback);
 

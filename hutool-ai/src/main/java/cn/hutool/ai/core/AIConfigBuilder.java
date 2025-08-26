@@ -111,7 +111,7 @@ public class AIConfigBuilder {
 	 *
 	 * @param timeout 超时时间
 	 * @return config
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	public synchronized AIConfigBuilder setTimout(final int timeout) {
 		if (timeout > 0) {
@@ -125,7 +125,7 @@ public class AIConfigBuilder {
 	 *
 	 * @param readTimout 取超时时间
 	 * @return config
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	public synchronized AIConfigBuilder setReadTimout(final int readTimout) {
 		if (readTimout > 0) {

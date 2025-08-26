@@ -128,7 +128,7 @@ public class GlobalDbConfig {
 	 * 设置构造结果集时每次从数据库取到的行数
 	 *
 	 * @param statementFetchSize 每一轮网络请求获取的行数
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	public static void setStatementFetchSize(Integer statementFetchSize) {
 		GlobalDbConfig.statementFetchSize = statementFetchSize;

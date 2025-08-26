@@ -53,7 +53,7 @@ public interface GrokService extends AIService {
 	 * @param prompt   题词
 	 * @param maxToken 最大token
 	 * @param callback 流式数据回调函数
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	default void message(String prompt, int maxToken, final Consumer<String> callback){
 		final List<Message> messages = new ArrayList<>();
@@ -68,7 +68,7 @@ public interface GrokService extends AIService {
 	 * @param messages messages 由对话组成的消息列表。如系统人设，背景信息等，用户自定义的信息
 	 * @param maxToken 最大token
 	 * @return AI回答
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	String message(List<Message> messages, int maxToken);
 
@@ -78,7 +78,7 @@ public interface GrokService extends AIService {
 	 * @param messages messages 由对话组成的消息列表。如系统人设，背景信息等，用户自定义的信息
 	 * @param maxToken 最大token
 	 * @param callback 流式数据回调函数
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	void message(List<Message> messages, int maxToken, final Consumer<String> callback);
 
@@ -100,7 +100,7 @@ public interface GrokService extends AIService {
 	 * @param images 图片列表/或者图片Base64编码图片列表(URI形式)
 	 * @param detail 手动设置图片的质量，取值范围high、low、auto,默认为auto
 	 * @param callback 流式数据回调函数
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	void chatVision(String prompt, final List<String> images, String detail,final Consumer<String> callback);
 
@@ -122,7 +122,7 @@ public interface GrokService extends AIService {
 	 * @param prompt 题词
 	 * @param images 传入｜的图片列表地址/或者图片Base64编码图片列表(URI形式)
 	 * @param callback 流式数据回调函数
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	default void chatVision(String prompt, final List<String> images, final Consumer<String> callback){
 		chatVision(prompt, images, GrokCommon.GrokVision.AUTO.getDetail(), callback);
@@ -186,7 +186,7 @@ public interface GrokService extends AIService {
 	 *
 	 * @param prompt 题词
 	 * @return 包含生成图片的url
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	String imagesGenerations(String prompt);
 }

@@ -114,7 +114,7 @@ public interface AIConfig {
 	 * 设置连接超时时间
 	 *
 	 * @param timeout 连接超时时间
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	void setTimeout(int timeout);
 
@@ -122,7 +122,7 @@ public interface AIConfig {
 	 * 获取连接超时时间
 	 *
 	 * @return timeout
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	int getTimeout();
 
@@ -130,7 +130,7 @@ public interface AIConfig {
 	 * 设置读取超时时间
 	 *
 	 * @param readTimeout 连接超时时间
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	void setReadTimeout(int readTimeout);
 
@@ -138,7 +138,7 @@ public interface AIConfig {
 	 * 获取读取超时时间
 	 *
 	 * @return readTimeout
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	int getReadTimeout();
 

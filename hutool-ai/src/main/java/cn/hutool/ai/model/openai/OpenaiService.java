@@ -51,7 +51,7 @@ public interface OpenaiService extends AIService {
 	 * @param images 图片列表/或者图片Base64编码图片列表(URI形式)
 	 * @param detail 手动设置图片的质量，取值范围high、low、auto,默认为auto
 	 * @param callback 流式数据回调函数
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	void chatVision(String prompt, final List<String> images, String detail,final Consumer<String> callback);
 
@@ -74,7 +74,7 @@ public interface OpenaiService extends AIService {
 	 * @param prompt 题词
 	 * @param images 传入的图片列表地址/或者图片Base64编码图片列表(URI形式)
 	 * @param callback 流式数据回调函数
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	default void chatVision(String prompt, final List<String> images, final Consumer<String> callback){
 		chatVision(prompt, images, OpenaiCommon.OpenaiVision.AUTO.getDetail(), callback);
@@ -206,7 +206,7 @@ public interface OpenaiService extends AIService {
 	 * @param prompt          对话题词
 	 * @param reasoningEffort 推理程度
 	 * @param callback 流式数据回调函数
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	default void chatReasoning(String prompt, String reasoningEffort, final Consumer<String> callback){
 		final List<Message> messages = new ArrayList<>();
@@ -233,7 +233,7 @@ public interface OpenaiService extends AIService {
 	 *
 	 * @param prompt 对话题词
 	 * @param callback 流式数据回调函数
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	default void chatReasoning(String prompt, final Consumer<String> callback) {
 		chatReasoning(prompt, OpenaiCommon.OpenaiReasoning.MEDIUM.getEffort(), callback);
@@ -257,7 +257,7 @@ public interface OpenaiService extends AIService {
 	 * @param messages        消息列表
 	 * @param reasoningEffort 推理程度
 	 * @param callback 流式数据回调函数
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	void chatReasoning(final List<Message> messages, String reasoningEffort, final Consumer<String> callback);
 
@@ -279,7 +279,7 @@ public interface OpenaiService extends AIService {
 	 *
 	 * @param messages 消息列表
 	 * @param callback 流式数据回调函数
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	default void chatReasoning(final List<Message> messages, final Consumer<String> callback) {
 		chatReasoning(messages, OpenaiCommon.OpenaiReasoning.MEDIUM.getEffort(), callback);

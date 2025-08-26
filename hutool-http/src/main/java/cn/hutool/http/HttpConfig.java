@@ -343,7 +343,7 @@ public class HttpConfig {
 	 * 设置是否忽略Content-Length，如果为true，则忽略Content-Length，自动根据响应内容计算Content-Length
 	 * @param ignoreContentLength 是否忽略Content-Length
 	 * @return this
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	public HttpConfig setIgnoreContentLength(boolean ignoreContentLength) {
 		this.ignoreContentLength = ignoreContentLength;

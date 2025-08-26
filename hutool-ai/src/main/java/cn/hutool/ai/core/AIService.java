@@ -46,7 +46,7 @@ public interface AIService {
 	 * 对话-SSE流式输出
 	 * @param prompt user题词
 	 * @param callback 流式数据回调函数
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	default void chat(String prompt, final Consumer<String> callback){
 		final List<Message> messages = new ArrayList<>();
@@ -69,7 +69,7 @@ public interface AIService {
 	 * 对话-SSE流式输出
 	 * @param messages 由目前为止的对话组成的消息列表，可以设置role，content。详细参考官方文档
 	 * @param callback 流式数据回调函数
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	void chat(final List<Message> messages, final Consumer<String> callback);
 }

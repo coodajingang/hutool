@@ -23,7 +23,7 @@ import cn.hutool.ai.core.AIServiceProvider;
  * 创建Hutool服务实现类
  *
  * @author elichow
- * @since 5.8.39
+ * @since 5.0.8.39
  */
 public class HutoolProvider implements AIServiceProvider {
 

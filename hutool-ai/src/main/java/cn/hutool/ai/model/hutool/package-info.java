@@ -18,7 +18,7 @@
  * 对hutool的封装实现
  *
  * @author elichow
- * @since 5.8.39
+ * @since 5.0.8.39
  */
 
 package cn.hutool.ai.model.hutool;

@@ -4257,7 +4257,7 @@ public class CharSequenceUtil {
 	 * @param str 被转的字符串
 	 * @return 转换后的字符串
 	 * @see String#toLowerCase()
-	 * @since 5.8.39
+	 * @since 5.0.8.39
 	 */
 	public static String toLowerCase(final CharSequence str) {
 		if (null == str) {
