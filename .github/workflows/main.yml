@@ -2,9 +2,9 @@ name: Build Hutool
 
 on:
   push:
-    branches: [ master ]
+    branches: [ v5-master ]
   pull_request:
-    branches: [ master ]
+    branches: [ v5-master ]
   workflow_dispatch: # 允许手动触发
 
 jobs:
