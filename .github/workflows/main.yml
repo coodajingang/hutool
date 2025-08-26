@@ -24,8 +24,15 @@ jobs:
     - name: Build with Maven
       run: mvn clean install -DskipTests
 
-    - name: Upload hutool-all Jar
+    # - name: Upload hutool-all Jar
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #     name: hutool-all
+    #     path: hutool-all/target/hutool-all-*.jar
+    - name: Upload All Modules Jar and POM
       uses: actions/upload-artifact@v4
       with:
-        name: hutool-all
-        path: hutool-all/target/hutool-all-*.jar
+        name: hutool-modules
+        path: |
+          */target/*.jar
+          */pom.xml
